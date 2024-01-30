@@ -5,6 +5,7 @@ go 1.21.4
 require github.com/spf13/viper v1.18.2
 
 require (
+	github.com/favadi/protoc-go-inject-tag v1.4.0 // indirect
 	github.com/fsnotify/fsnotify v1.7.0 // indirect
 	github.com/go-sql-driver/mysql v1.7.0 // indirect
 	github.com/hashicorp/hcl v1.0.0 // indirect
