@@ -1,0 +1,26 @@
+mode: "debug"
+port: 4000
+start_time: "2023-01-01"
+machine_id: 1
+
+#log:
+#  level: "debug"
+#  filename: "./log/codehub.log"
+#  show_line: true
+#  prefix: "codehub"
+
+mysql:
+  host: localhost
+  port: 3306
+  user: root
+  password: root
+  db: micro-todolist
+
+#redis:
+#  host: redis507
+#  port: 6379
+#  db: 0
+#
+#auth:
+#  exp: 24 # 7hour
+#  secret: "my name is ..."
