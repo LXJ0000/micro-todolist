@@ -17,6 +17,8 @@ type AppConfig struct {
 	//LogConfig   `mapstructure:"log"`
 	MySQLConfig `mapstructure:"mysql"`
 	//RedisConfig `mapstructure:"redis"`
+	EtcdConfig   `mapstructure:"etcd"`
+	ServerConfig `mapstructure:"server"`
 }
 
 type MySQLConfig struct {
@@ -27,6 +29,16 @@ type MySQLConfig struct {
 	Port         int    `mapstructure:"port"`
 	MaxOpenConns int    `mapstructure:"max_open_conns"`
 	MaxIdleConns int    `mapstructure:"max_idle_conns"`
+}
+
+type EtcdConfig struct {
+	Host string `mapstructure:"host"`
+	Port int    `mapstructure:"port"`
+}
+
+type ServerConfig struct {
+	UserAddr string `mapstructure:"user_addr"`
+	TaskAddr string `mapstructure:"task_addr"`
 }
 
 //type RedisConfig struct {

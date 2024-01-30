@@ -15,6 +15,12 @@ mysql:
   user: root
   password: root
   db: micro-todolist
+etcd:
+  host: localhost
+  post: 2379
+server:
+  user_addr: 127.0.0.1:8088
+  task_addr: 127.0.0.1:8089
 
 #redis:
 #  host: redis507
