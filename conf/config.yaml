@@ -21,6 +21,7 @@ etcd:
 server:
   user_addr: 127.0.0.1:8088
   task_addr: 127.0.0.1:8089
+  web_addr: 127.0.0.1:4000
 
 #redis:
 #  host: redis507

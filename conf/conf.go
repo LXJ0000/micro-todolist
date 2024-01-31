@@ -39,6 +39,7 @@ type EtcdConfig struct {
 type ServerConfig struct {
 	UserAddr string `mapstructure:"user_addr"`
 	TaskAddr string `mapstructure:"task_addr"`
+	WebAddr  string `mapstructure:"web_addr"`
 }
 
 //type RedisConfig struct {

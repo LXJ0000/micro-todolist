@@ -19,7 +19,7 @@ func NewUserDao(ctx context.Context) *UserDao {
 
 func (dao *UserDao) FindUserByUserName(userName string) (user *model.User, err error) {
 	err = dao.Model(&model.User{}).
-		Where("user_name = ?", userName).First(&user).Error
+		Where("user_name = ?", userName).Find(&user).Error
 	return
 }
 
